@@ -9,8 +9,7 @@ from setuptools import setup
 HERE = pathlib.Path(__file__).parent
 
 # get module version from git tag
-client_version = "2.4.0" #subprocess.run(['git', 'describe', '--tags'],
-                                stdout=subprocess.PIPE).stdout.decode("utf-8").strip()
+client_version = "2.4.0"
 # The text of the README file
 README = (HERE / "README.md").read_text()
 
