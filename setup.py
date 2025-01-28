@@ -9,7 +9,7 @@ from setuptools import setup
 HERE = pathlib.Path(__file__).parent
 
 # get module version from git tag
-client_version = subprocess.run(['git', 'describe', '--tags'],
+client_version = "2.4.0" #subprocess.run(['git', 'describe', '--tags'],
                                 stdout=subprocess.PIPE).stdout.decode("utf-8").strip()
 # The text of the README file
 README = (HERE / "README.md").read_text()
@@ -22,7 +22,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="alphavantage_api_client",
-    version="2.4.0",
+    version=client_version,
     description="Interact with Alpha Vantage REST API",
     long_description=README,
     long_description_content_type="text/markdown",
